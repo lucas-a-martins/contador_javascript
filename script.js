@@ -4,7 +4,7 @@ function contar() {
     var passo = document.getElementById('passo')
     var res = document.getElementById('res')
 
-    if (inicio.value.length == 0 ||  fim.value.length == 0 || passo.value.length == 0){
+    if (inicio.value.length == 0 ||  fim.value.length == 0 || passo.value.length == 0) {
         res.innerHTML = 'Impossível contar!'
     }else {
         if(Number(passo.value == 0)) {
@@ -21,7 +21,6 @@ function contar() {
                 res.innerHTML += ` ${c} \u{1F449}`
                 c = c - p
             }
-            
         }else {
             res.innerHTML = 'Contando: '
             var c = Number(inicio.value)
@@ -32,8 +31,6 @@ function contar() {
                 res.innerHTML += ` ${c} \u{1F449}`
                 c = c + p
             }
-            
-
         }
         res.innerHTML += ` \u{1F3C1}`
     }
