@@ -6,8 +6,8 @@ function contar() {
 
     if (inicio.value.length == 0 ||  fim.value.length == 0 || passo.value.length == 0) {
         res.innerHTML = 'Impossível contar!'
-    }else {
-        if(Number(passo.value == 0)) {
+    } else {
+        if (Number(passo.value == 0)) {
             window.alert('PASSO INVÁLIDO! Considerando passo = 1')
             passo.value = 1
         }
@@ -21,7 +21,7 @@ function contar() {
                 res.innerHTML += ` ${c} \u{1F449}`
                 c = c - p
             }
-        }else {
+        } else {
             res.innerHTML = 'Contando: '
             var c = Number(inicio.value)
             var f = Number(fim.value)
